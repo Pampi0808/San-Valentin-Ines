@@ -1,1 +1,32 @@
-# San-Valentin-Ines
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite + React</title>
+    <title>¿Quieres ser mi San Valentin?</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
+  2 changes: 2 additions & 0 deletions2  
+src/App.jsx
+@@ -111,13 +111,15 @@ function App() {
+                disabled={imagenCargada} // Deshabilita el botón si la imagen no se ha cargado
+              >
+                {Object.keys(randomValor).length === 0 ? "No" : randomValor.description}
+                <span hidden>{document.title = Object.keys(randomValor).length === 0 ? "¿Quieres ser mi San Valentin?" : randomValor.description}</span>
+              </button>
+            </div>
+          </div>
+        ) : (
+          <div className="flex justify-center items-center flex-col space-y-10">
+            <h1 className="text-4xl text-white font-bold">Sabia que dirias que si ❤️!</h1>
+            <img src="https://i.pinimg.com/originals/9b/dc/c6/9bdcc6206c1d36a37149d31108c6bb41.gif" alt="" className="mx-auto" />
+            <span hidden>{document.title = 'Sabia que dirias que si ❤️!'}</span>
+          </div>
+        )
+      }
